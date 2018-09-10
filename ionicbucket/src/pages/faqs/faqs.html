@@ -1,0 +1,34 @@
+<!-- 
+  - @author    Ionic Bucket <ionicbucket@gmail.com>
+  - @copyright Copyright (c) 2018
+  - @license   Fulcrumy
+-->
+
+<!-- Header  -->
+<ion-header no-border>
+  <header title="{{'PAGE_TITLE.FAQS' | translate }}"></header>
+</ion-header>
+<!-- End Header  -->
+
+<!-- Contents  -->
+<ion-content padding *ngIf="allFaqs && allFaqs.length">
+  <ion-item-group *ngFor="let item of allFaqs | groupBy: 'SECTION'; let i = index">
+    <ion-item-divider color="color1">{{item.key}}</ion-item-divider>
+    <ion-item text-wrap *ngFor="let data of item.value; let i2 = index" (click)="toggleGroup(i+'.'+i2)" [ngClass]="{active: isGroupShown(i+'.'+i2)}">
+      <ion-row>
+        <ion-col col-9>
+          <h2>
+            {{data.TITLE}}
+          </h2>
+        </ion-col>
+        <ion-col col-3 text-right>
+          <ion-icon color="color2" [name]="isGroupShown(i+'.'+i2) ? 'arrow-down' : 'arrow-forward'"></ion-icon>
+        </ion-col>
+      </ion-row>
+      <div *ngIf="isGroupShown(i+'.'+i2)">
+        <p>{{data.DESCRIPTION}}</p>
+      </div>
+    </ion-item>
+  </ion-item-group>
+</ion-content>
+<!-- End Contents  -->

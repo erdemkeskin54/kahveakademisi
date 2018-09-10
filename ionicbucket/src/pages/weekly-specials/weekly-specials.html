@@ -1,0 +1,32 @@
+<!-- 
+  - @author    Ionic Bucket <ionicbucket@gmail.com>
+  - @copyright Copyright (c) 2018
+  - @license   Fulcrumy
+-->
+
+<!-- Header  -->
+<ion-header no-border>
+  <header title="{{'PAGE_TITLE.WeeklySpecials' | translate }}"></header>
+</ion-header>
+<!-- End Header  -->
+
+<!-- Contents  -->
+<ion-content padding class="background" *ngIf="listItems && listItems.length">
+  <ion-card text-center *ngFor="let item of listItems; let i = index" (tap)="openProductDetails(item)">
+    <img *ngIf="item.IMAGE[0]" [src]="item.IMAGE[0]">
+    <ion-card-content>
+      <ion-card-title color="color2">
+        {{ item.NAME }}
+      </ion-card-title>
+      <p>
+        {{item.WEIGHT}} - ${{item.CURRENT_PRICE}}
+      </p>
+    </ion-card-content>
+    <ion-row>
+      <ion-col>
+        <button ion-button color="color2">Shop Now</button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>
+<!-- End Contents  -->

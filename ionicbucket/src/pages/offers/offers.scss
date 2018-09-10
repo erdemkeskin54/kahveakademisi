@@ -1,0 +1,16 @@
+page-offers {
+    .background {
+        background: url("../assets/imgs/background.png") no-repeat fixed center;
+        background-size: cover;
+        .swiper-slide img {
+            height: 200px !important;
+            width: 100%;
+        }
+        ion-slides {
+            height: auto;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}

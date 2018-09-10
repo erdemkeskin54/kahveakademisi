@@ -1,0 +1,174 @@
+<!-- 
+  - @author    Ionic Bucket <ionicbucket@gmail.com>
+  - @copyright Copyright (c) 2018
+  - @license   Fulcrumy
+-->
+
+<!-- Header  -->
+<ion-header no-border>
+  <header-one [title]="title"></header-one>
+</ion-header>
+<!-- End Header  -->
+
+<!-- Content  -->
+<ion-content padding class="background">
+  <ion-grid>
+    <!-- Product Discount  -->
+    <ion-row text-center>
+      <ion-col>
+        <ion-badge color="color1" *ngIf="productDetails.discount">{{productDetails.discountAmount}} % İndirim</ion-badge>
+      </ion-col>
+    </ion-row>
+
+    <!-- Product Image Slider  -->
+    <ion-row padding-top>
+      <ion-slides pager loop="true" style="direction:ltr">
+        <ion-slide class="slider" *ngFor="let img of productDetails.productImageGalleries; let i = index">
+          <img [src]="img.imageUrl">
+        </ion-slide>
+      </ion-slides>
+    </ion-row>
+
+    <!-- Product Details  -->
+    <ion-row text-center>
+      <ion-col>
+        <h2 ion-text color="color2">{{productDetails.productName}}</h2>
+        <!-- Product Action Buttons  -->
+        <ion-row text-center>
+          <ion-col col-12 style="padding-top: 10px;">
+            <ion-row *ngFor="let amountType of productDetails.productAmountTypes" [ngSwitch]="amountType.amountType">
+              <ion-col class="md ios col-12"*ngSwitchCase="1" (click)="stockAlert(productAmountTypes[0].stock)">
+                <ion-toggle (ionChange)="isChecked1(productAmountTypes[0].checked)" [checked]="productAmountTypes[0].checked" [disabled]="productAmountTypes[0].stock == false"
+                  float-left > </ion-toggle>
+                <ion-row>
+                  <ion-col col-4 style="padding: 0">
+                    <button ion-button clear [disabled]="!productAmountTypes[0].checked" color="color1" item-end (click)="minusQuantity(0)">
+                      <ion-icon name="remove-circle" style="zoom:2.0;"></ion-icon>
+                    </button>
+                  </ion-col>
+                  <ion-col col-4 style="padding: 0">
+                    <ion-row>
+                      <ion-col col-12 text-center style="padding:0">
+                        <span>
+                          <ion-badge [color]="productAmountTypes[0].stock===false ? 'danger':'secondary'" > Adet</ion-badge>
+                        </span>
+                      </ion-col>
+                    </ion-row>
+                    <!-- Quantity Of Product  -->
+                    <ion-row>
+                      <span class="price" [style.color]="productAmountTypes[0].checked ? 'black' : 'rgb(221, 221, 221)'">{{productAmountTypes[0].quantity}} * {{amountType.price | discountcalculater: productDetails.discountAmount
+                        | number : '1.2-2'}}₺</span>
+                      <span class="price" [style.color]="productAmountTypes[0].checked ? 'black' : 'rgb(221, 221, 221)'">{{productAmountTypes[0].quantity * amountType.price | discountcalculater: productDetails.discountAmount
+                        | number : '1.2-2'}} ₺</span>
+                      <!-- Increase Quantity  -->
+                    </ion-row>
+
+                  </ion-col>
+                  <ion-col col-4 style="padding: 0">
+                    <button ion-button clear item-end [disabled]="!productAmountTypes[0].checked" color="color1" (click)="addQuantity(0)">
+                      <ion-icon name="add-circle" style="zoom:2.0;"></ion-icon>
+                    </button>
+                  </ion-col>
+                </ion-row>
+              </ion-col>
+              <ion-col class="md ios col-12" *ngSwitchCase="2"  (click)="stockAlert(productAmountTypes[1].stock)">
+                <ion-toggle [ngModel]="productAmountTypes[1].checked" (ngModelChange)="isChecked2(productAmountTypes[1].checked)" [checked]="productAmountTypes[1].checked"
+                  float-left>
+                </ion-toggle>
+                <ion-row>
+                  <ion-col col-4 style="padding: 0">
+                    <button ion-button clear item-end [disabled]="!productAmountTypes[1].checked" color="color1" (click)="minusQuantity(1)">
+                      <ion-icon name="remove-circle" style="zoom:2.0;"></ion-icon>
+                    </button>
+                  </ion-col>
+                  <ion-col col-4 style="padding: 0">
+                    <ion-row>
+                      <ion-col col-12 text-center style="padding:0">
+                        <span >
+                          <ion-badge color="secondary" [style.color]="productAmountTypes[1].checked ? 'black' : 'rgb(221, 221, 221)'"> Kutu</ion-badge>
+                        </span>
+                      </ion-col>
+                    </ion-row>
+                    <!-- Quantity Of Product  -->
+                    <ion-row>
+                      <span class="price" [style.color]="productAmountTypes[1].checked ? 'black' : 'rgb(221, 221, 221)'">{{productAmountTypes[1].quantity}} * {{amountType.price | discountcalculater: productDetails.discountAmount
+                        | number : '1.2-2'}}₺</span>
+                      <span class="price" [style.color]="productAmountTypes[1].checked ? 'black' : 'rgb(221, 221, 221)'">{{productAmountTypes[1].quantity * amountType.price | discountcalculater: productDetails.discountAmount
+                        | number : '1.2-2'}} ₺</span>
+                    </ion-row>
+                  </ion-col>
+                  <ion-col col-4 style="padding: 0">
+                    <button ion-button clear item-end [disabled]="!productAmountTypes[1].checked" color="color1" (click)="addQuantity(1)">
+                      <ion-icon name="add-circle" style="zoom:2.0;"></ion-icon>
+                    </button>
+                  </ion-col>
+                </ion-row>
+              </ion-col>
+              <ion-col class="md ios col-12" *ngSwitchCase="3" style="margin-bottom: 10px;"  (click)="stockAlert(productAmountTypes[2].stock)"  >
+                <ion-toggle [ngModel]="productAmountTypes[2].checked" (ngModelChange)="isChecked3(productAmountTypes[2].checked)" [checked]="productAmountTypes[2].checked" float-left>
+                </ion-toggle>
+                <ion-row>
+                  <ion-col col-4 style="padding: 0">
+                    <button ion-button clear item-end [disabled]="!productAmountTypes[2].checked" color="color1" (click)="minusQuantity(2)">
+                      <ion-icon name="remove-circle" style="zoom:2.0;"></ion-icon>
+                    </button>
+                  </ion-col>
+                  <ion-col col-4 style="padding: 0">
+                    <ion-row>
+                      <ion-col col-12 text-center style="padding:0">
+                        <span >
+                          <ion-badge color="secondary" [style.color]="productAmountTypes[2].checked ? 'black' : 'rgb(221, 221, 221)'"> Kilo</ion-badge>
+                        </span>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <!-- Quantity Of Product  -->
+                      <span class="price" [style.color]="productAmountTypes[2].checked ? 'black' : 'rgb(221, 221, 221)'">{{productAmountTypes[2].quantity}} * {{amountType.price | discountcalculater: productDetails.discountAmount
+                        | number : '1.2-2'}}₺</span>
+                      <span class="price" [style.color]="productAmountTypes[2].checked ? 'black' : 'rgb(221, 221, 221)'">{{productAmountTypes[2].quantity * amountType.price | discountcalculater: productDetails.discountAmount
+                        | number : '1.2-2'}} ₺</span>
+                    </ion-row>
+                  </ion-col>
+                  <ion-col col-4 style="padding: 0">
+                    <button ion-button clear item-end [disabled]="!productAmountTypes[2].checked" color="color1" (click)="addQuantity(2)">
+                      <ion-icon name="add-circle" style="zoom:2.0;"></ion-icon>
+                    </button>
+                  </ion-col>
+                </ion-row>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+
+    <ion-row text-center>
+      <ion-col col-12>
+        <h2>Kategoriler</h2>
+        <p *ngFor="let category of productDetails.categories">
+          <ion-badge color="secondary" style="font-size:18px;"> {{category.categoryName}}</ion-badge>
+        </p>
+
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row text-center>
+      <ion-col col-12>
+        <h1>Açıklama</h1>
+        <p>
+          {{productDetails.longDescription}}
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<!-- End Content  -->
+
+<!-- Footer  -->
+<ion-footer>
+  <div class="animated fadeInUp">
+    <button ion-button round full class="custom-btn" (tap)="addToCart()">Sepete Ekle</button>
+  </div>
+</ion-footer>
+<!-- End Footer  -->

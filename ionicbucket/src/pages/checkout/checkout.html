@@ -1,0 +1,256 @@
+<!-- 
+  - @author    Ionic Bucket <ionicbucket@gmail.com>
+  - @copyright Copyright (c) 2018
+  - @license   Fulcrumy
+-->
+
+<!-- Header  -->
+<ion-header no-border>
+  <header-one title="{{'PAGE_TITLE.Checkout' | translate }}"></header-one>
+</ion-header>
+<!-- End Header  -->
+
+<!-- Contents  -->
+<ion-content padding class="background">
+  <!-- Segment Of Checkout Options  -->
+  <div>
+    <ion-segment color="color2" [(ngModel)]="segment">
+      <ion-segment-button value="address">
+        Adres
+      </ion-segment-button>
+      <ion-segment-button value="time" [disabled]="addressForm.invalid">
+        Tarih & Saat
+      </ion-segment-button>
+      <ion-segment-button value="payment" [disabled]="addressForm.invalid">
+        Ödeme
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="segment">
+    <!-- Address  -->
+    <ion-list *ngSwitchCase="'address'">
+
+      <ion-list radio-group padding-top [(ngModel)]="model.oldAddressId">
+        <ion-list-header color="color2" (click)="toggleGroup(3)" [ngClass]="{active: isGroupShown(3)}">
+          Kayıtlı adresleriniz
+          <ion-icon color="white" style="float: right;" [name]="isGroupShown(3) ? 'arrow-down' : 'arrow-forward'"></ion-icon>
+        </ion-list-header>
+        <div [hidden]="!isGroupShown(3)">
+          <ion-item>
+            <ion-label>Yeni adres ekle</ion-label>
+            <ion-radio value="0" color="color2" (click)="addressChange(0)"></ion-radio>
+          </ion-item>
+          <ion-item *ngFor="let address of addresses;let i=index;">
+            <ion-label>{{address.addressTitle}}</ion-label>
+            <ion-radio checked="{{i===0 ? 'true':'false'}}" value="{{address.id}}" color="color2" (click)="addressChange(i)"></ion-radio>
+          </ion-item>
+        </div>
+      </ion-list>
+      <form class="form-address" [formGroup]="addressForm">
+        <ion-list>
+          <ion-item>
+            <ion-label>
+              <ion-icon name="mail" color="color1"></ion-icon>
+            </ion-label>
+            <ion-input type="text" placeholder="Adres Başlığı" formControlName="addressTitle" [disabled]="disabled==true?true:false"></ion-input>
+          </ion-item>
+          <p *ngIf="addressTitle.hasError('required') && addressTitle.touched " style="margin-left:10px;color:red">- Adres başlığı giriniz </p>
+          <!-- Address Two -->
+          <ion-item>
+            <ion-label>
+              <ion-icon name="mail" color="color1"></ion-icon>
+            </ion-label>
+            <ion-input type="text" placeholder="Adresiniz" formControlName="address" [disabled]="disabled==true?true:false"></ion-input>
+          </ion-item>
+          <p *ngIf="address.hasError('required') && address.touched " style="margin-left:10px;color:red">- Adresini giriniz </p>
+          <ion-row>
+            <ion-col col-6>
+              <ion-item>
+                <ion-input type="text" placeholder="Şehir" formControlName="city" [disabled]="disabled==true?true:false"></ion-input>
+              </ion-item>
+              <p *ngIf="city.hasError('required') && city.touched " style="margin-left:10px;color:red">- Şehir giriniz </p>
+            </ion-col>
+            <ion-col col-6>
+              <ion-item>
+                <ion-input type="text" placeholder="Posta Kodu" formControlName="zip" [disabled]="disabled==true?true:false"></ion-input>
+              </ion-item>
+              <p *ngIf="zip.hasError('required') && zip.touched " style="margin-left:10px;color:red">- Posta kodu giriniz </p>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col col-6>
+              <ion-item>
+                <ion-input type="text" placeholder="İlçe" formControlName="district" [disabled]="disabled==true?true:false"></ion-input>
+              </ion-item>
+              <p *ngIf="district.hasError('required') && district.touched " style="margin-left:10px;color:red">- İlçe giriniz </p>
+            </ion-col>
+            <ion-col col-6>
+              <ion-item>
+                <ion-input type="text" placeholder="Mahalle" formControlName="neighborhood" [disabled]="disabled==true?true:false"></ion-input>
+              </ion-item>
+              <p *ngIf="neighborhood.hasError('required') && neighborhood.touched " style="margin-left:10px;color:red">- Mahalle giriniz </p>
+            </ion-col>
+          </ion-row>
+        </ion-list>
+
+        <!-- Next Step Button  -->
+        <div class="animated fadeInUp">
+          <button ion-button type="button" color="color2" ion-button round full [disabled]="addressForm.invalid" (click)="nextstep('time')">
+            Sonraki Adım
+          </button>
+        </div>
+      </form>
+    </ion-list>
+    <!-- End Address  -->
+
+    <!-- Date Time  -->
+    <ion-list *ngSwitchCase="'time'">
+      <form>
+        <ion-list>
+          <ion-item>
+            <ion-label>Teslimat Tarihi</ion-label>
+            <ion-datetime displayFormat="DD MMM, YYYY" placeholder="DD MMM, YYYY" [(ngModel)]="model.deliveryDate" name="deliveryDate"></ion-datetime>
+          </ion-item>
+          <ion-item>
+            <ion-label>Teslimat Saati</ion-label>
+            <ion-datetime displayFormat="hh:mm A" placeholder="hh:mm A" [(ngModel)]="model.deliveryTime" name="deliveryTime"></ion-datetime>
+          </ion-item>
+
+          <!-- Next Step Button  -->
+          <div class="animated fadeInUp" padding-top>
+            <button ion-button type="button" color="color2" ion-button round full (click)="nextstep('payment')">
+              Sonraki Adım
+            </button>
+          </div>
+        </ion-list>
+      </form>
+    </ion-list>
+    <!-- End Date Time  -->
+
+    <!-- Payment Section  -->
+    <ion-list *ngSwitchCase="'payment'">
+      <form [formGroup]="creditCardForm">
+        <!-- Payment Options  -->
+        <ion-list radio-group padding-top formControlName="paymentMethod">
+          <ion-list-header color="color2" (click)="toggleGroup(1)" [ngClass]="{active: isGroupShown(1)}">
+            Ödeme Seçenekleri
+            <ion-icon color="white" style="float: right;" [name]="isGroupShown(1) ? 'arrow-down' : 'arrow-forward'"></ion-icon>
+          </ion-list-header>
+          <div [hidden]="!isGroupShown(1)">
+            <ion-item>
+              <ion-label>Kredi Kartı</ion-label>
+              <ion-radio value="1" color="color2"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>Kapıda Ödeme</ion-label>
+              <ion-radio value="2" color="color2"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>Havale</ion-label>
+              <ion-radio value="3" color="color2"></ion-radio>
+            </ion-item>
+          </div>
+        </ion-list>
+        <div [hidden]="paymentMethod.value==1?false:true">
+          <ion-list radio-group padding-top formControlName="installment" style="margin-bottom:40px!important;">
+            <ion-list-header color="color2" (click)="toggleGroup(2)" [ngClass]="{active: isGroupShown(2)}">
+              Taksit Seçenekleri
+              <ion-icon color="white" style="float: right;" [name]="isGroupShown(2) ? 'arrow-down' : 'arrow-forward'"></ion-icon>
+            </ion-list-header>
+            <div [hidden]="!isGroupShown(2)">
+              <ion-item>
+                <ion-label>Tek Çekim</ion-label>
+                <ion-radio value="1" color="color2"></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>2 taksit</ion-label>
+                <ion-radio value="2" color="color2"></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>3 taksit</ion-label>
+                <ion-radio value="3" color="color2"></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>4 taksit</ion-label>
+                <ion-radio value="4" color="color2"></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>5 taksit</ion-label>
+                <ion-radio value="5" color="color2"></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>6 taksit</ion-label>
+                <ion-radio value="6" color="color2"></ion-radio>
+              </ion-item>
+            </div>
+          </ion-list>
+          <ion-list class="payment">
+            <!-- Name -->
+            <ion-item>
+              <ion-input type="text" placeholder="Kart üstündeki isim" formControlName="fullname"></ion-input>
+            </ion-item>
+            <p *ngIf="fullname.hasError('required') && fullname.touched " style="margin-left:10px;color:red">- Kart üstündeki ismi giriniz </p>
+            <!-- Card No  -->
+            <ion-item>
+              <ion-input type="text" placeholder="Kart Numarası*" formControlName="cardNumber"></ion-input>
+            </ion-item>
+            <p *ngIf="cardNumber.hasError('required') && cardNumber.touched " style="margin-left:10px;color:red">- Kart numarasını giriniz </p>
+            <!-- Expire Date -->
+            <ion-item>
+              <ion-select formControlName="mounth">
+                <ion-option value="1">01</ion-option>
+                <ion-option value="2">02</ion-option>
+                <ion-option value="3">03</ion-option>
+                <ion-option value="4">04</ion-option>
+                <ion-option value="5">05</ion-option>
+                <ion-option value="6">06</ion-option>
+                <ion-option value="7">07</ion-option>
+                <ion-option value="8">08</ion-option>
+                <ion-option value="9">09</ion-option>
+                <ion-option value="10">10</ion-option>
+                <ion-option value="11">11</ion-option>
+                <ion-option value="12">12</ion-option>
+              </ion-select>
+              <!-- <ion-input type="text" [(ngModel)]="model.mounth" name="mounth" placeholder="Ay*" #mount="ngModel"></ion-input> -->
+            </ion-item>
+            <p *ngIf="mounth.hasError('required') && mounth.touched " style="margin-left:10px;color:red">- Ay bilgisini giriniz </p>
+            <ion-item>
+              <ion-select formControlName="year">
+                <ion-option value="18">2018</ion-option>
+                <ion-option value="19">2019</ion-option>
+                <ion-option value="20">2020</ion-option>
+                <ion-option value="21">2021</ion-option>
+                <ion-option value="22">2022</ion-option>
+                <ion-option value="23">2023</ion-option>
+                <ion-option value="24">2024</ion-option>
+                <ion-option value="25">2025</ion-option>
+                <ion-option value="26">2026</ion-option>
+                <ion-option value="27">2027</ion-option>
+                <ion-option value="28">2028</ion-option>
+                <ion-option value="29">2029</ion-option>
+                <ion-option value="30">2030</ion-option>
+              </ion-select>
+              <!--   <ion-input type="text" [(ngModel)]="model.year" name="year" placeholder="Yıl*" #year="ngModel"></ion-input>-->
+            </ion-item>
+            <p *ngIf="year.hasError('required') && year.touched " style="margin-left:10px;color:red">- Yıl bilgisini giriniz </p>
+            <!-- CVC  -->
+            <ion-item>
+              <ion-input type="text" formControlName="cvc" placeholder="CVC*"></ion-input>
+            </ion-item>
+            <p *ngIf="cvc.hasError('required') && cvc.touched " style="margin-left:10px;color:red">- Kart üstündeki güvenlik numarasını giriniz </p>
+          </ion-list>
+        </div>
+      </form>
+      <!-- End Card Information  -->
+      <div class="animated fadeInUp" padding-top>
+        <button ion-button type="button" color="color2" ion-button round full [disabled]="creditCardForm.invalid"(click)="finish()">
+          Ödemeyi Tamamla
+        </button>
+      </div>
+    </ion-list>
+    <!-- End Payment Section   -->
+  </div>
+</ion-content>
+<!-- End Contents  -->

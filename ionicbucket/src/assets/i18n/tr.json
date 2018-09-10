@@ -1,0 +1,595 @@
+{
+    "LANGUAGE": "Türkçe Dil",
+    "PAGE_TITLE": {
+        "AboutUs": "Hakkımızda",
+        "MyCart": "Sepetim",
+        "Categories": "Katagoriler",
+        "Checkout": "Ödeme",
+        "ContactUs": "İletişim",
+        "FAQS": "SSS",
+        "Home": "Anasayfa",
+        "MyOrder": "Siparişlerim",
+        "NewProducts": "Yeni Ürünler",
+        "Offers": "Offers",
+        "PopularProducts": "Popüler Ürünler",
+        "Products": "Ürünler",
+        "Profile": "Profil",
+        "Search": "Arama",
+        "Settings": "Ayarlr",
+        "WeeklySpecials": "Haftanın Özelleri"
+    },
+    "LANGUAGES": [
+        {
+            "ID": "ar",
+            "VALUE": "Arabic"
+        },
+        {
+            "ID": "en",
+            "VALUE": "English"
+        },
+        {
+            "ID": "es",
+            "VALUE": "Spanish"
+        },
+        {
+            "ID": "fr",
+            "VALUE": "French"
+        },
+        {
+            "ID": "it",
+            "VALUE": "Italian"
+        },
+        {
+            "ID": "ja",
+            "VALUE": "Japanese"
+        },
+        {
+            "ID": "pt",
+            "VALUE": "Portugues"
+        },
+        {
+            "ID": "zh",
+            "VALUE": "Chinese"
+        },
+        {
+            "ID": "tr",
+            "VALUE": "Turkish"
+        }
+    ],
+    "SIDEBAR_MENU": [
+        {
+            "NAME": "Ana Sayfa"
+        },   
+        {
+            "NAME": "Hakkımızda"
+        },
+        {
+            "NAME": "İletişim"
+        },  
+        {
+            "NAME": "Sık Sorulan Sorular"
+        },
+        {
+            "NAME": "Arama"
+        },
+        {
+            "NAME": "Ürünler"
+        },
+        {
+            "NAME": "Popüler Ürünler"
+        },
+        {
+            "NAME": "Kategoriler"
+        },
+        {
+            "NAME": "Profilim"
+        },
+        {
+            "NAME": "Sepetim"
+        },
+        {
+            "NAME": "Ödeme Yeri"
+        },
+        {
+            "NAME": "Siparilerim"
+        },
+        {
+            "NAME": "Ayarlar"
+        }
+    ],
+    "CATEGORIES": [
+        {
+            "ID": 1,
+            "NAME": "Kategori 1",
+            "IMAGE": "assets/imgs/kategori.png",
+            "SUB_CATEGORIES": [
+                {
+                    "ID": 1,
+                    "NAME": "Alt Kategori 1",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 2,
+                    "NAME": "Alt Kategori 2",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 3,
+                    "NAME": "Alt Kategori 3",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 4,
+                    "NAME": "Alt Kategori 4",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 5,
+                    "NAME": "Alt Kategori 5",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 6,
+                    "NAME": "Alt Kategori 6",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 7,
+                    "NAME": "Alt Kategori 7",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 8,
+                    "NAME": "Alt Kategori 8",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                }
+            ]
+        },
+        {
+            "ID": 2,
+            "NAME": "Kategori 2",
+            "IMAGE": "assets/imgs/kategori.png",
+            "SUB_CATEGORIES": [
+                {
+                    "ID": 1,
+                    "NAME": "Alt Kategori 1",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 2,
+                    "NAME": "Alt Kategori 2",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 3,
+                    "NAME": "Alt Kategori 3",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 4,
+                    "NAME": "Alt Kategori 4",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 5,
+                    "NAME": "Alt Kategori 5",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 6,
+                    "NAME": "Alt Kategori 6",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 7,
+                    "NAME": "Alt Kategori 7",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 8,
+                    "NAME": "Alt Kategori 8",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                }
+            ]
+        },
+        {
+            "ID": 3,
+            "NAME": "Kategori 3",
+            "IMAGE": "assets/imgs/kategori.png",
+            "SUB_CATEGORIES": [
+                {
+                    "ID": 1,
+                    "NAME": "Alt Kategori 1",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 2,
+                    "NAME": "Alt Kategori 2",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 3,
+                    "NAME": "Alt Kategori 3",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 4,
+                    "NAME": "Alt Kategori 4",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 5,
+                    "NAME": "Alt Kategori 5",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 6,
+                    "NAME": "Alt Kategori 6",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 7,
+                    "NAME": "Alt Kategori 7",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 8,
+                    "NAME": "Alt Kategori 8",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                }
+            ]
+        },
+        {
+            "ID": 4,
+            "NAME": "Kategori 4",
+            "IMAGE": "assets/imgs/kategori.png",
+            "SUB_CATEGORIES": [
+                {
+                    "ID": 1,
+                    "NAME": "Alt Kategori 1",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 2,
+                    "NAME": "Alt Kategori 2",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 3,
+                    "NAME": "Alt Kategori 3",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 4,
+                    "NAME": "Alt Kategori 4",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 5,
+                    "NAME": "Alt Kategori 5",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 6,
+                    "NAME": "Alt Kategori 6",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 7,
+                    "NAME": "Alt Kategori 7",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 8,
+                    "NAME": "Alt Kategori 8",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                }
+            ]
+        },
+        {
+            "ID": 5,
+            "NAME": "Kategori 5",
+            "IMAGE": "assets/imgs/kategori.png",
+            "SUB_CATEGORIES": [
+                {
+                    "ID": 1,
+                    "NAME": "Alt Kategori 1",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 2,
+                    "NAME": "Alt Kategori 2",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 3,
+                    "NAME": "Alt Kategori 3",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 4,
+                    "NAME": "Alt Kategori 4",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 5,
+                    "NAME": "Alt Kategori 5",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 6,
+                    "NAME": "Alt Kategori 6",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 7,
+                    "NAME": "Alt Kategori 7",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 8,
+                    "NAME": "Alt Kategori 8",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                }
+            ]
+        },
+        {
+            "ID": 6,
+            "NAME": "Kategori 6",
+            "IMAGE": "assets/imgs/kategori.png",
+            "SUB_CATEGORIES": [
+                {
+                    "ID": 1,
+                    "NAME": "Alt Kategori 1",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 2,
+                    "NAME": "Alt Kategori 2",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 3,
+                    "NAME": "Alt Kategori 3",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 4,
+                    "NAME": "Alt Kategori 4",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 5,
+                    "NAME": "Alt Kategori 5",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 6,
+                    "NAME": "Alt Kategori 6",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 7,
+                    "NAME": "Alt Kategori 7",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                },
+                {
+                    "ID": 8,
+                    "NAME": "Alt Kategori 8",
+                    "IMAGE": "assets/imgs/alt-kategori.png"
+                }
+            ]
+        }
+    ],
+    "PRODUCTS": [
+        {
+            "ID": 1,
+            "NAME": "Ürün 1",
+            "DESCRIPTION": "Ürün hakkında açıklayıcı bir metin yazılması gerekiyor ve o metin burya gelecek.",
+            "CATEGORY": "Kategori 1",
+            "PREVIOUS_PRICE": 8.00,
+            "CURRENT_PRICE": 6.99,
+            "DISCOUNT": 10,
+            "WEIGHT": "1 Kg",
+            "IMAGE": [
+                "assets/imgs/urun-resmi-1.png",
+                "assets/imgs/urun-resmi-2.png"
+            ]
+        },
+        {
+            "ID": 2,
+            "NAME": "Ürün 2",
+            "DESCRIPTION": "Ürün hakkında açıklayıcı bir metin yazılması gerekiyor ve o metin burya gelecek.",
+            "CATEGORY": "Kategori 2",
+            "PREVIOUS_PRICE": 8.00,
+            "CURRENT_PRICE": 6.99,
+            "DISCOUNT": 10,
+            "WEIGHT": "1 Kg",
+            "IMAGE": [
+                "assets/imgs/urun-resmi-1.png",
+                "assets/imgs/urun-resmi-2.png"
+            ]
+        },
+        {
+            "ID": 3,
+            "NAME": "Ürün 3",
+            "DESCRIPTION": "Ürün hakkında açıklayıcı bir metin yazılması gerekiyor ve o metin burya gelecek.",
+            "CATEGORY": "Kategori 3",
+            "PREVIOUS_PRICE": 8.00,
+            "CURRENT_PRICE": 6.99,
+            "DISCOUNT": 10,
+            "WEIGHT": "1 Kg",
+            "IMAGE": [
+                "assets/imgs/urun-resmi-1.png",
+                "assets/imgs/urun-resmi-2.png"
+            ]
+        },
+        {
+            "ID": 4,
+            "NAME": "Ürün 4",
+            "DESCRIPTION": "Ürün hakkında açıklayıcı bir metin yazılması gerekiyor ve o metin burya gelecek.",
+            "CATEGORY": "Kategori 1",
+            "PREVIOUS_PRICE": 8.00,
+            "CURRENT_PRICE": 6.99,
+            "DISCOUNT": 10,
+            "WEIGHT": "1 Kg",
+            "IMAGE": [
+                "assets/imgs/urun-resmi-1.png",
+                "assets/imgs/urun-resmi-2.png"
+            ]
+        },
+        {
+            "ID": 5,
+            "NAME": "Ürün 5",
+            "DESCRIPTION": "Ürün hakkında açıklayıcı bir metin yazılması gerekiyor ve o metin burya gelecek.",
+            "CATEGORY": "Kategori 1",
+            "PREVIOUS_PRICE": 8.00,
+            "CURRENT_PRICE": 6.99,
+            "DISCOUNT": 10,
+            "WEIGHT": "1 Kg",
+            "IMAGE": [
+                "assets/imgs/urun-resmi-1.png",
+                "assets/imgs/urun-resmi-2.png"
+            ]
+        },
+        {
+            "ID": 6,
+            "NAME": "Ürün 6",
+            "DESCRIPTION": "Ürün hakkında açıklayıcı bir metin yazılması gerekiyor ve o metin burya gelecek.",
+            "CATEGORY": "Kategori 1",
+            "PREVIOUS_PRICE": 8.00,
+            "CURRENT_PRICE": 6.99,
+            "DISCOUNT": 10,
+            "WEIGHT": "1 Kg",
+            "IMAGE": [
+                "assets/imgs/urun-resmi-1.png",
+                "assets/imgs/urun-resmi-2.png"
+            ]
+        },
+        {
+            "ID": 7,
+            "NAME": "Ürün 7",
+            "DESCRIPTION": "Ürün hakkında açıklayıcı bir metin yazılması gerekiyor ve o metin burya gelecek.",
+            "CATEGORY": "Kategori 1",
+            "PREVIOUS_PRICE": 8.00,
+            "CURRENT_PRICE": 6.99,
+            "DISCOUNT": 10,
+            "WEIGHT": "1 Kg",
+            "IMAGE": [
+                "assets/imgs/urun-resmi-1.png",
+                "assets/imgs/urun-resmi-2.png"
+            ]
+        },
+        {
+            "ID": 8,
+            "NAME": "Ürün 8",
+            "DESCRIPTION": "Ürün hakkında açıklayıcı bir metin yazılması gerekiyor ve o metin burya gelecek.",
+            "CATEGORY": "Kategori 1",
+            "PREVIOUS_PRICE": 8.00,
+            "CURRENT_PRICE": 6.99,
+            "DISCOUNT": 10,
+            "WEIGHT": "1 Kg",
+            "IMAGE": [
+                "assets/imgs/urun-resmi-1.png",
+                "assets/imgs/urun-resmi-2.png"
+            ]
+        },
+        {
+            "ID": 9,
+            "NAME": "Ürün 9",
+            "DESCRIPTION": "Ürün hakkında açıklayıcı bir metin yazılması gerekiyor ve o metin burya gelecek.",
+            "CATEGORY": "Kategori 1",
+            "PREVIOUS_PRICE": 8.00,
+            "CURRENT_PRICE": 6.99,
+            "DISCOUNT": 10,
+            "WEIGHT": "1 Kg",
+            "IMAGE": [
+                "assets/imgs/urun-resmi-1.png",
+                "assets/imgs/urun-resmi-2.png"
+            ]
+        },
+        {
+            "ID": 10,
+            "NAME": "Ürün 10",
+            "DESCRIPTION": "Ürün hakkında açıklayıcı bir metin yazılması gerekiyor ve o metin burya gelecek.",
+            "CATEGORY": "Kategori 1",
+            "PREVIOUS_PRICE": 8.00,
+            "CURRENT_PRICE": 6.99,
+            "DISCOUNT": 10,
+            "WEIGHT": "1 Kg",
+            "IMAGE": [
+                "assets/imgs/urun-resmi-1.png",
+                "assets/imgs/urun-resmi-2.png"
+            ]
+        },
+        {
+            "ID": 11,
+            "NAME": "Ürün 11",
+            "DESCRIPTION": "Ürün hakkında açıklayıcı bir metin yazılması gerekiyor ve o metin burya gelecek.",
+            "CATEGORY": "Kategori 1",
+            "PREVIOUS_PRICE": 8.00,
+            "CURRENT_PRICE": 6.99,
+            "DISCOUNT": 10,
+            "WEIGHT": "1 Kg",
+            "IMAGE": [
+                "assets/imgs/urun-resmi-1.png",
+                "assets/imgs/urun-resmi-2.png"
+            ]
+        }
+    ],
+    "FAQS": [
+        {
+            "SECTION": "Genel",
+            "TITLE": "Kahve Akademisi Nedir?",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+            "SECTION": "Genel",
+            "TITLE": "Ne tür ürünler satıyorsunuz?",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+            "SECTION": "Genel",
+            "TITLE": "Hangi şehirlerde ve konumlarda çalışıyorsunuz?",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+            "SECTION": "Genel",
+            "TITLE": "Benim yerime teslim mi?",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+            "SECTION": "Ödemeler/Geri Ödeme ile ilgili sorular",
+            "TITLE": "Kahve Akademisi'nde nasıl ödeme yapabilirim?",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+            "SECTION": "Ödemeler/Geri Ödeme ile ilgili sorular",
+            "TITLE": "Geri ödememi ne zaman alacağım?",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+            "SECTION": "Ödemeler/Geri Ödeme ile ilgili sorular",
+            "TITLE": "Adrese teslim mi?",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+            "SECTION": "İptal ve İadeler",
+            "TITLE": "How can I cancel my order?",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+            "SECTION": "İptal ve İadeler",
+            "TITLE": "Geri bir şey göndermek istersem?",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+            "SECTION": "İptal ve İadeler",
+            "TITLE": "Siparişimi yeniden ayarlayabilir miyim?",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        }
+    ],
+    "BUTTONS": {
+        "AddToCart": "Sepete Ekle"
+    }
+}

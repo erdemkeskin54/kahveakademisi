@@ -1,0 +1,84 @@
+<!-- 
+  - @author    Ionic Bucket <ionicbucket@gmail.com>
+  - @copyright Copyright (c) 2018
+  - @license   Fulcrumy
+-->
+
+<!-- Header  -->
+<ion-header no-border>
+  <header title="{{'PAGE_TITLE.Home' | translate }}"></header>
+</ion-header>
+<!-- End Header  -->
+
+<!-- Content  -->
+<ion-content>
+
+  <!-- Top Feature Slider  -->
+  <home-top-slider style="direction:ltr"></home-top-slider>
+
+  <!-- All Categories Section  -->
+  <div text-center>
+    <h3>Tüm Kategoriler</h3>
+    <p>Sağa ve sola kaydırın</p>
+  </div>
+
+  <category-list-view-one style="direction:ltr"></category-list-view-one>
+  <!-- End All Categories Section  -->
+
+  <!-- New Products Section  -->
+  <div text-center>
+    <h3>Yeni Ürünler</h3>
+  </div>
+
+  <ion-slides  slidesPerView="1" loop="true" effect="slide" autoplay="7000" class="animated slideInLeft"
+    style="direction:ltr">
+    <ion-slide  (tap)="openProductDetails()">
+      <ion-card text-center>
+        <img class="img1" src="http://192.168.1.100:2176/images/product-image-2.jpg">
+        <ion-card-content>
+          <ion-card-title color="color2">
+            Deneme Ürünü 1
+          </ion-card-title>
+          <p>
+            1 kg - 30 ₺
+          </p>
+        </ion-card-content>
+        <ion-row>
+          <ion-col>
+            <button ion-button color="color2">{{ 'BUTTONS.AddToCart' | translate }}</button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+  <!-- End  New Products Section  -->
+
+  <!-- Popular Products Section  -->
+  <div text-center>
+    <h3>En çok Satan</h3>
+  </div>
+  <ion-slides  slidesPerView="1" loop="true" effect="slide" autoplay="7000" class="animated slideInLeft"
+    style="direction:ltr">
+    <ion-slide  (tap)="openProductDetails()">
+      <ion-card text-center>
+        <img class="img1" src="http://192.168.1.100:2176/images/product-image-2.jpg">
+        <ion-card-content>
+          <ion-card-title color="color2">
+            Deneme Ürünü 1
+          </ion-card-title>
+          <p>
+            1 kg - 30 ₺
+          </p>
+        </ion-card-content>
+        <ion-row>
+          <ion-col>
+            <button ion-button color="color2">{{ 'BUTTONS.AddToCart' | translate }}</button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+  <!-- End Popular Products Section  -->
+
+</ion-content>
+<!-- End Content  -->

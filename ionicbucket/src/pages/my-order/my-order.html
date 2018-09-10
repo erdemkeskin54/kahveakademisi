@@ -1,0 +1,185 @@
+<!-- 
+  - @author    Ionic Bucket <ionicbucket@gmail.com>
+  - @copyright Copyright (c) 2018
+  - @license   Fulcrumy
+-->
+
+<!-- Header  -->
+<ion-header no-border>
+  <header title="{{'PAGE_TITLE.MyOrder' | translate }}"></header>
+</ion-header>
+<!-- End Header  -->
+
+<!-- Content  -->
+<ion-content padding class="background">
+  <!-- Order Segments -->
+  <div>
+    <ion-segment color="color2" [(ngModel)]="segment">
+      <ion-segment-button value="pending">
+        Aktifler
+      </ion-segment-button>
+      <ion-segment-button value="completed">
+        Tamamlananlar
+      </ion-segment-button>
+      <ion-segment-button value="canceled">
+        İptal Ettiklerim
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="segment">
+    <!-- Pending Order List  -->
+    <ion-list *ngSwitchCase="'pending'">
+      <ion-card class="animated fadeIn">
+        <ion-card-header>
+          Cuma, Nisan 26, 2018
+        </ion-card-header>
+
+        <ion-list no-line>
+          <ion-item>
+            <h2>Urun 2</h2>
+            <button color="color2" ion-button clear item-end>6.99 ₺</button>
+          </ion-item>
+
+          <ion-item>
+            <h2>Urun 5</h2>
+            <button color="color2" ion-button clear item-end>6.99 ₺</button>
+          </ion-item>
+
+          <ion-item class="total">
+            <h2>Toplam Tutar</h2>
+            <button color="color2" ion-button clear item-end>13.98 ₺</button>
+          </ion-item>
+
+        </ion-list>
+      </ion-card>
+      <ion-card class="animated fadeIn">
+        <ion-card-header>
+          Cuma, Nisan 26, 2018
+        </ion-card-header>
+
+        <ion-list no-line>
+          <ion-item>
+            <h2>Urun 2</h2>
+            <button color="color2" ion-button clear item-end>6.99 ₺</button>
+          </ion-item>
+
+          <ion-item>
+            <h2>Urun 5</h2>
+            <button color="color2" ion-button clear item-end>6.99 ₺</button>
+          </ion-item>
+
+          <ion-item class="total">
+            <h2>Toplam Tutar</h2>
+            <button color="color2" ion-button clear item-end>13.98 ₺</button>
+          </ion-item>
+
+        </ion-list>
+      </ion-card>
+      <ion-card class="animated fadeIn">
+        <ion-card-header>
+          Cuma, Nisan 26, 2018
+        </ion-card-header>
+
+        <ion-list no-line>
+          <ion-item>
+            <h2>Urun 2</h2>
+            <button color="color2" ion-button clear item-end>6.99 ₺</button>
+          </ion-item>
+
+          <ion-item>
+            <h2>Urun 5</h2>
+            <button color="color2" ion-button clear item-end>6.99 ₺</button>
+          </ion-item>
+
+          <ion-item class="total">
+            <h2>Toplam Tutar</h2>
+            <button color="color2" ion-button clear item-end>13.98 ₺</button>
+          </ion-item>
+
+        </ion-list>
+      </ion-card>
+    </ion-list>
+    <!-- End Pending Order List  -->
+
+    <!-- Completed Order List -->
+    <ion-list *ngSwitchCase="'completed'">
+      <ion-card class="animated fadeIn">
+        <ion-card-header>
+          Friday, January 26, 2018
+        </ion-card-header>
+
+        <ion-list no-line>
+          <ion-item>
+            <h2>Honeycrisp Apple</h2>
+            <button color="color2" ion-button clear item-end>$6.99</button>
+          </ion-item>
+
+          <ion-item>
+            <h2>Bananas</h2>
+            <button color="color2" ion-button clear item-end>$6.99</button>
+          </ion-item>
+
+          <ion-item class="total">
+            <h2>Total Amount</h2>
+            <button color="color2" ion-button clear item-end>$13.98</button>
+          </ion-item>
+
+        </ion-list>
+      </ion-card>
+
+      <ion-card class="animated fadeIn">
+        <ion-card-header>
+          Friday, January 26, 2018
+        </ion-card-header>
+
+        <ion-list no-line>
+          <ion-item>
+            <h2>Honeycrisp Apple</h2>
+            <button color="color2" ion-button clear item-end>$6.99</button>
+          </ion-item>
+
+          <ion-item>
+            <h2>Bananas</h2>
+            <button color="color2" ion-button clear item-end>$6.99</button>
+          </ion-item>
+
+          <ion-item class="total">
+            <h2>Total Amount</h2>
+            <button color="color2" ion-button clear item-end>$13.98</button>
+          </ion-item>
+
+        </ion-list>
+      </ion-card>
+    </ion-list>
+    <!-- End Completed Order List  -->
+
+    <!-- Canceled Order List -->
+    <ion-list *ngSwitchCase="'canceled'">
+      <ion-card class="animated fadeIn">
+        <ion-card-header>
+          Friday, January 26, 2018
+        </ion-card-header>
+
+        <ion-list no-line>
+          <ion-item>
+            <h2>Honeycrisp Apple</h2>
+            <button color="color2" ion-button clear item-end>$6.99</button>
+          </ion-item>
+
+          <ion-item>
+            <h2>Bananas</h2>
+            <button color="color2" ion-button clear item-end>$6.99</button>
+          </ion-item>
+
+          <ion-item class="total">
+            <h2>Total Amount</h2>
+            <button color="color2" ion-button clear item-end>$13.98</button>
+          </ion-item>
+        </ion-list>
+      </ion-card>
+    </ion-list>
+    <!-- End Canceled Order List   -->
+  </div>
+</ion-content>
+<!-- End Content  -->

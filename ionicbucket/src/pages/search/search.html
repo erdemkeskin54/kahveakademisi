@@ -1,0 +1,19 @@
+<!-- 
+  - @author    Ionic Bucket <ionicbucket@gmail.com>
+  - @copyright Copyright (c) 2018
+  - @license   Fulcrumy
+-->
+
+<!-- Header  -->
+<ion-header no-border>
+  <header-one title="{{'PAGE_TITLE.Search' | translate }}"></header-one>
+</ion-header>
+<!-- End Header  -->
+
+<!-- Cnntents  -->
+<ion-content padding>
+  <!-- Search Bar  -->
+  <ion-searchbar (ionInput)="getItems($event)" animated="true" placeholder="Ara"></ion-searchbar>
+  <products [productList]="productList"></products>
+</ion-content>
+<!-- End Contents  -->

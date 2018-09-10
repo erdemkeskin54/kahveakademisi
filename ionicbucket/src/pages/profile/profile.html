@@ -1,0 +1,79 @@
+<!-- 
+  - @author    Ionic Bucket <ionicbucket@gmail.com>
+  - @copyright Copyright (c) 2018
+  - @license   Fulcrumy
+-->
+
+<!-- Header  -->
+<ion-header no-border>
+  <header title="{{'PAGE_TITLE.Profile' | translate }}"></header>
+</ion-header>
+<!-- End Header  -->
+
+<!-- Content  -->
+<ion-content padding>
+
+  <!-- User Profile Photo -->
+  <ion-card color="color1">
+    <div text-center>
+
+      <!-- Button of change photo -->
+      <ion-fab top>
+        <button ion-fab mini color="color2">
+          <ion-icon name="create"></ion-icon>
+        </button>
+      </ion-fab>
+
+      <!-- Profile Picture -->
+      <div text-center class="img">
+        <ion-img src="assets/imgs/avatar.png"></ion-img>
+      </div>
+    </div>
+  </ion-card>
+  <!-- End User Profile Photo   -->
+
+  <!-- Personal Information -->
+  <form>
+    <ion-list>
+      <!-- User Name -->
+      <ion-item>
+        <ion-label>
+          <ion-icon name="person" color="color1"></ion-icon>
+        </ion-label>
+        <ion-input type="text" placeholder="Ad Soyad" name="username"></ion-input>
+      </ion-item>
+
+      <!-- Email -->
+      <ion-item>
+        <ion-label>
+          <ion-icon name="mail" color="color1"></ion-icon>
+        </ion-label>
+        <ion-input type="text" placeholder="Email" name="email"></ion-input>
+      </ion-item>
+
+      <!-- Phone Number -->
+      <ion-item>
+        <ion-label>
+          <ion-icon name="call" color="color1"></ion-icon>
+        </ion-label>
+        <ion-input type="text" placeholder="Telefon No" name="phone"></ion-input>
+      </ion-item>
+
+      <!-- Address -->
+      <ion-item>
+        <ion-label>
+          <ion-icon name="locate" color="color1"></ion-icon>
+        </ion-label>
+        <ion-input type="text" placeholder="Adres" name="address"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <!-- Button -->
+    <div class="buttons animated fadeInUp">
+      <button class="custom-btn" ion-button type="button" color="color2" ion-button round full>
+          Güncelle
+      </button>
+    </div>
+  </form>
+</ion-content>
+<!-- End Content  -->

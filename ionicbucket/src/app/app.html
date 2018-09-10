@@ -1,0 +1,117 @@
+<!-- 
+  - @author    Ionic Bucket <ionicbucket@gmail.com>
+  - @copyright Copyright (c) 2018
+  - @license   Fulcrumy
+-->
+
+<!-- Left Side Menu  -->
+<ion-menu [content]="content" *ngIf="this.platform.dir()==='ltr'" side="left">
+  <!-- Header -->
+  <ion-header>
+    <ion-toolbar>
+      <div class="contents">
+        <div class="left">
+          <img class="logo" src="assets/imgs/avatar.png">
+        </div>
+        <div class="right">
+          <span>Merhaba, Mert İĞDİR</span>
+          <br>
+          <br>
+          <span>0537 922 62 33</span>
+        </div>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  <!-- End Header  -->
+
+  <!-- Menu Contents -->
+  <ion-content>
+    <ion-list no-lines>
+      <!-- Home  -->
+      <ion-item menuClose no-border text-wrap (click)="openPage('HomePage')">
+        <ion-icon name="home" style="zoom:0.8;" item-left></ion-icon>
+        <span ion-text>{{'SIDEBAR_MENU.' + 0 + '.NAME' | translate}}</span>
+      </ion-item>
+      <!-- About Us  -->
+      <ion-item menuClose no-border text-wrap (click)="openPage('AboutUsPage')">
+        <ion-icon name="bookmark" style="zoom:0.8;" item-left></ion-icon>
+        <span ion-text>{{'SIDEBAR_MENU.' + 1 + '.NAME' | translate}}</span>
+      </ion-item>
+
+      <!-- Contact Us  -->
+      <ion-item menuClose no-border text-wrap (click)="openPage('ContactUsPage')">
+        <ion-icon name="call" style="zoom:0.8;" item-left></ion-icon>
+        <span ion-text>{{'SIDEBAR_MENU.' + 2 + '.NAME' | translate}}</span>
+      </ion-item>
+
+      <!-- FAQs  -->
+      <ion-item menuClose no-border text-wrap (click)="openPage('FaqsPage')">
+        <ion-icon name="help" style="zoom:0.8;" item-left></ion-icon>
+        <span ion-text>{{'SIDEBAR_MENU.' + 3 + '.NAME' | translate}}</span>
+      </ion-item>
+      <!-- Search  -->
+      <ion-item menuClose no-border text-wrap (click)="openPage('SearchPage')">
+        <ion-icon name="search" style="zoom:0.8;" item-left></ion-icon>
+        <span ion-text>{{'SIDEBAR_MENU.' + 4 + '.NAME' | translate}}</span>
+      </ion-item>
+      <hr>
+      <!-- Products  -->
+      <ion-item menuClose no-border text-wrap (click)="openPage('ProductsPage')">
+        <ion-icon name="ice-cream" style="zoom:0.8;" item-left></ion-icon>
+        <span ion-text>{{'SIDEBAR_MENU.' + 5 + '.NAME' | translate}}</span>
+      </ion-item>
+      <!-- Popular Products -->
+      <ion-item menuClose no-border text-wrap (click)="openPage('PopularProductsPage')">
+        <ion-icon name="flame" style="zoom:0.8;" item-left></ion-icon>
+        <span ion-text>{{'SIDEBAR_MENU.' + 6 + '.NAME' | translate}}</span>
+      </ion-item>
+      <hr>
+      <!--  Categories -->
+      <ion-item menuClose no-border text-wrap (click)="openPage('CategoriesPage')">
+        <ion-icon name="snow" style="zoom:0.8;" item-left></ion-icon>
+        <span ion-text>{{'SIDEBAR_MENU.' + 7 + '.NAME' | translate}}</span>
+      </ion-item>
+      <hr>
+      <!-- My Profile  -->
+      <ion-item menuClose no-border text-wrap (click)="openPage('ProfilePage')">
+          <ion-icon name="person" style="zoom:0.8;" item-left></ion-icon>
+        <span ion-text>{{'SIDEBAR_MENU.' + 8 + '.NAME' | translate}}</span>
+      </ion-item>
+      <!-- My Cart  -->
+      <ion-item menuClose no-border text-wrap (click)="openPage('CartPage')">
+        <ion-icon name="cart" style="zoom:0.8;" item-left></ion-icon>
+        <span ion-text>{{'SIDEBAR_MENU.' + 9 + '.NAME' | translate}}</span>
+      </ion-item>
+      <!-- Checkout  -->
+      <ion-item menuClose no-border text-wrap (click)="openPage('CheckoutPage')">
+        <ion-icon name="lock" style="zoom:0.8;" item-left></ion-icon>
+        <span ion-text>{{'SIDEBAR_MENU.' + 10 + '.NAME' | translate}}</span>
+      </ion-item>
+      <!-- My order  -->
+      <ion-item menuClose no-border text-wrap (click)="openPage('MyOrderPage')">
+        <ion-icon name="restaurant" style="zoom:0.8;" item-left></ion-icon>
+        <span ion-text>{{'SIDEBAR_MENU.' + 11 + '.NAME' | translate}}</span>
+      </ion-item>
+      <hr>
+      <ion-item menuClose no-border text-wrap (click)="openPage('Settings')">
+        <ion-icon name="settings" style="zoom:0.8;" item-left></ion-icon>
+        <span ion-text>{{'SIDEBAR_MENU.' + 12 + '.NAME' | translate}}</span>
+      </ion-item>
+
+    </ion-list>
+  </ion-content>
+  <!-- End Contents  -->
+
+  <!-- Footer  -->
+  <ion-footer>
+    <!-- Logout  -->
+    <button ion-button full no-margin (click)="openPage('SignInPage')">
+      <ion-icon name="send"></ion-icon>&nbsp; Oturumu Kapat
+    </button>
+  </ion-footer>
+  <!-- End Footer  -->
+</ion-menu>
+
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

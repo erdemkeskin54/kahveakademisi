@@ -1,0 +1,40 @@
+<ion-card class="animated fadeIn" *ngFor="let product of productList; let i = index">
+  <ion-grid>
+    <!-- Product Price and Discount Options  -->
+    <ion-row>
+      <ion-col *ngIf="product.discount">
+        <ion-badge color="color1">{{product.discountAmount}} % İndirim</ion-badge>
+      </ion-col>
+      <ion-col text-right class="price" [ngSwitch]="product.productAmountTypes[0].amountType">
+        <ion-badge *ngSwitchCase="1">Adet</ion-badge>
+        <ion-badge *ngSwitchCase="2">Kilo</ion-badge>
+        <ion-badge *ngSwitchCase="3">Kutu</ion-badge>
+        <span class="current"> {{(product.productAmountTypes[0].price -(product.productAmountTypes[0].price * product.discountAmount/100)) | tofixed:2
+        }} ₺</span>
+        <span class="previous" *ngIf="product.discount">{{product.productAmountTypes[0].price}} ₺</span>
+      </ion-col>
+    </ion-row>
+
+    <!-- Product Details  -->
+    <ion-row padding>
+      <ion-col col-5>
+        <img [src]="product.mainImage" />
+      </ion-col>
+      <ion-col col-7>
+        <ion-row>
+          <h2 style="margin-bottom:5px;">
+            <strong style="font-size:17px">{{product.productName}}</strong>
+          </h2>
+          <p style="margin-bottom: 10px">{{product.shortDescription | textsplice:50 }}...</p>
+          <h3>
+            <strong>Kategoriler:</strong>
+          </h3>
+          <h5 *ngFor="let category of product.categories" style="color:red">&nbsp;{{category.categoryName}},</h5>
+          <button ion-button round full color="color3" (click)="openProductDetails(product)">
+            <ion-icon name="search"></ion-icon> &nbsp; İncele
+          </button>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>

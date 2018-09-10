@@ -1,0 +1,55 @@
+<!-- 
+  - @author    Ionic Bucket <ionicbucket@gmail.com>
+  - @copyright Copyright (c) 2018
+  - @license   Fulcrumy
+-->
+<!-- Sign In Page -->
+
+<ion-content>
+  <div class="background" text-center>
+
+    <div class="title animated fadeInDown">
+      <p>Kahve Akademisi Giriş</p>
+    </div>
+
+    <!-- Main Body -->
+    <div class="main-body animated zoomIn" padding>
+      <form>
+        <ion-list>
+          <!-- Email -->
+          <ion-item>
+            <ion-label>
+              <ion-icon name="md-mail" color="color1"></ion-icon>
+            </ion-label>
+            <ion-input type="email" placeholder="Email" name="email"></ion-input>
+          </ion-item>
+
+          <!-- Password -->
+          <ion-item>
+            <ion-label>
+              <ion-icon name="md-eye" color="color1"></ion-icon>
+            </ion-label>
+            <ion-input type="password" placeholder="Password" name="password"></ion-input>
+          </ion-item>
+
+          <!-- Forget Password button-->
+          <button type="button" ion-button color="color1" clear (click)="gotoForgetPasswordPage()">
+            <strong>Şifrenizi mi unuttunuz?</strong>
+          </button>
+        </ion-list>
+
+        <!-- Sign In Button -->
+        <div class="buttons animated fadeInUp">
+          <button class="custom-btn" ion-button type="button" color="color2" ion-button round full (click)="signIn()">
+              Giriş
+          </button>
+        </div>
+      </form>
+
+      <!-- Sign Up button-->
+      <button ion-button color="color1" clear (click)="gotoSignUpPage()">
+        <strong>Üyelik İste!</strong>
+      </button>
+    </div>
+  </div>
+</ion-content>

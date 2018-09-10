@@ -1,0 +1,56 @@
+<!-- 
+  - @author    Ionic Bucket <ionicbucket@gmail.com>
+  - @copyright Copyright (c) 2018
+  - @license   Fulcrumy
+-->
+
+<!-- Header  -->
+<ion-header no-border>
+  <header title="{{'PAGE_TITLE.ContactUs' | translate }}"></header>
+</ion-header>
+<!-- End Header  -->
+
+<!-- Contents  -->
+<ion-content padding class="background" style="background-color: white!important;">
+  <div text-center style="margin-top:15%">
+    <p class="contact-title">İletişime Geçin</p>
+    <p class="contact-subtitle">Herhangi bir konuda bize yazabilirsiniz!</p>
+    <p class="contact-subtitle">0555 555 55 55</p>
+    <p class="contact-subtitle">info@info.com</p>
+  </div>
+  <div class="contact-box">
+    <form novalidate>
+      <ion-row>
+        <ion-col>
+          <ion-list inset>
+            <!-- User Name -->
+            <ion-item>
+              <ion-label>
+                <ion-icon color="color1" name="md-person"></ion-icon>
+              </ion-label>
+              <ion-input type="text" placeholder="Konu*">
+              </ion-input>
+            </ion-item>
+
+            <!-- Message  -->
+            <ion-item>
+              <ion-label>
+                <ion-icon color="color1" name="chatbubbles"></ion-icon>
+              </ion-label>
+              <ion-textarea placeholder="Mesajınız*" rows="3">
+              </ion-textarea>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+
+      <!-- Button  -->
+      <ion-row>
+        <ion-col>
+          <button ion-button full round color="color1">Gönder</button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </div>
+</ion-content>
+<!-- End Contents  -->

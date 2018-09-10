@@ -1,0 +1,610 @@
+{
+    "LANGUAGE": "Japanese Language",
+    "PAGE_TITLE": {
+        "AboutUs": "About Us",
+        "MyCart": "My Cart",
+        "Categories": "Categories",
+        "Checkout": "Checkout",
+        "ContactUs": "Contact Us",
+        "FAQS": "FAQs",
+        "Home": "Home",
+        "MyOrder": "My Order",
+        "NewProducts": "New Products",
+        "Offers": "Offers",
+        "PopularProducts": "Popular Products",
+        "Products": "Products",
+        "Profile": "Profile",
+        "Search": "Search",
+        "Settings": "Settings",
+        "WeeklySpecials": "Weekly Specials"
+    },
+    "LANGUAGES": [
+        {
+            "ID": "ar",
+            "VALUE": "アラビア語"
+        },
+        {
+            "ID": "en",
+            "VALUE": "英語"
+        },
+        {
+            "ID": "es",
+            "VALUE": "スペイン語"
+        },
+        {
+            "ID": "fr",
+            "VALUE": "フランス語"
+        },
+        {
+            "ID": "it",
+            "VALUE": "イタリアの"
+        },
+        {
+            "ID": "ja",
+            "VALUE": "日本語"
+        },
+        {
+            "ID": "pt",
+            "VALUE": "ポルトガル語"
+        },
+        {
+            "ID": "zh",
+            "VALUE": "中国語"
+        }
+    ],
+    "SIDEBAR_MENU": [
+        {
+            "NAME": "Home"
+        },
+        {
+            "NAME": "My Profile"
+        },
+        {
+            "NAME": "Weekly Specials"
+        },
+        {
+            "NAME": "Offers"
+        },
+        {
+            "NAME": "New Products"
+        },
+        {
+            "NAME": "Popular Products"
+        },
+        {
+            "NAME": "Categories"
+        },
+        {
+            "NAME": "Products"
+        },
+        {
+            "NAME": "Search"
+        },
+        {
+            "NAME": "My Order"
+        },
+        {
+            "NAME": "My Cart"
+        },
+        {
+            "NAME": "Checkout"
+        },
+        {
+            "NAME": "Settings"
+        },
+        {
+            "NAME": "Rate Us"
+        },
+        {
+            "NAME": "Share"
+        },
+        {
+            "NAME": "About Us"
+        },
+        {
+            "NAME": "Contact Us"
+        },
+        {
+            "NAME": "FAQs"
+        }
+    ],
+    "CATEGORIES": [
+        {
+            "ID": 1,
+            "NAME": "Food",
+            "IMAGE": "assets/imgs/product1.2.png",
+            "SUB_CATEGORIES": [
+                {
+                    "ID": 1,
+                    "NAME": "Fresh Fruits",
+                    "IMAGE": "assets/imgs/product2.2.png"
+                },
+                {
+                    "ID": 2,
+                    "NAME": "Fresh Vegetables",
+                    "IMAGE": "assets/imgs/product7.1.png"
+                },
+                {
+                    "ID": 3,
+                    "NAME": "Fresh Meat & Seefood",
+                    "IMAGE": "assets/imgs/product14.png"
+                },
+                {
+                    "ID": 4,
+                    "NAME": "Cooking & Baking",
+                    "IMAGE": "assets/imgs/c7.png"
+                },
+                {
+                    "ID": 5,
+                    "NAME": "Bread & Bakery",
+                    "IMAGE": "assets/imgs/product17.png"
+                },
+                {
+                    "ID": 6,
+                    "NAME": "Snacks",
+                    "IMAGE": "assets/imgs/product16.png"
+                }
+            ]
+        },
+        {
+            "ID": 2,
+            "NAME": "Home & Cleaning",
+            "IMAGE": "assets/imgs/c2.png",
+            "SUB_CATEGORIES": [
+                {
+                    "ID": 1,
+                    "NAME": "Air Fresheners",
+                    "IMAGE": "assets/imgs/c2.png"
+                },
+                {
+                    "ID": 2,
+                    "NAME": "Dish Detergents",
+                    "IMAGE": "assets/imgs/c2.png"
+                },
+                {
+                    "ID": 3,
+                    "NAME": "Cleaning Supplies",
+                    "IMAGE": "assets/imgs/c2.png"
+                },
+                {
+                    "ID": 4,
+                    "NAME": "Kitchen Accessories",
+                    "IMAGE": "assets/imgs/c2.png"
+                }
+            ]
+        },
+        {
+            "ID": 3,
+            "NAME": "Baby & Child Care",
+            "IMAGE": "assets/imgs/c3.png",
+            "SUB_CATEGORIES": [
+                {
+                    "ID": 1,
+                    "NAME": "Diapers & Wipes",
+                    "IMAGE": "assets/imgs/c3.png"
+                },
+                {
+                    "ID": 2,
+                    "NAME": "Baby Bottles",
+                    "IMAGE": "assets/imgs/c3.png"
+                },
+                {
+                    "ID": 3,
+                    "NAME": "Baby Food",
+                    "IMAGE": "assets/imgs/c3.png"
+                },
+                {
+                    "ID": 4,
+                    "NAME": "Bath & Skin",
+                    "IMAGE": "assets/imgs/c3.png"
+                },
+                {
+                    "ID": 5,
+                    "NAME": "Baby Oral Care",
+                    "IMAGE": "assets/imgs/c3.png"
+                }
+            ]
+        },
+        {
+            "ID": 4,
+            "NAME": "Pet Care",
+            "IMAGE": "assets/imgs/c4.png",
+            "SUB_CATEGORIES": [
+                {
+                    "ID": 1,
+                    "NAME": "Kitten Food",
+                    "IMAGE": "assets/imgs/c4.png"
+                },
+                {
+                    "ID": 2,
+                    "NAME": "Cat Food",
+                    "IMAGE": "assets/imgs/c4.png"
+                },
+                {
+                    "ID": 3,
+                    "NAME": "Dog Food",
+                    "IMAGE": "assets/imgs/c4.png"
+                },
+                {
+                    "ID": 4,
+                    "NAME": "Pet Accessories",
+                    "IMAGE": "assets/imgs/c4.png"
+                }
+            ]
+        },
+        {
+            "ID": 5,
+            "NAME": "Sports Nutrition",
+            "IMAGE": "assets/imgs/c5.png",
+            "SUB_CATEGORIES": [
+                {
+                    "ID": 1,
+                    "NAME": "Amino Acids",
+                    "IMAGE": "assets/imgs/c5.png"
+                },
+                {
+                    "ID": 2,
+                    "NAME": "Endurance & Energy",
+                    "IMAGE": "assets/imgs/c5.png"
+                },
+                {
+                    "ID": 3,
+                    "NAME": "Nutrition Bars",
+                    "IMAGE": "assets/imgs/c5.png"
+                },
+                {
+                    "ID": 4,
+                    "NAME": "Protein",
+                    "IMAGE": "assets/imgs/c5.png"
+                }
+            ]
+        },
+        {
+            "ID": 6,
+            "NAME": "Health & Household",
+            "IMAGE": "assets/imgs/c6.png",
+            "SUB_CATEGORIES": [
+                {
+                    "ID": 1,
+                    "NAME": "Women's Health",
+                    "IMAGE": "assets/imgs/c6.png"
+                },
+                {
+                    "ID": 2,
+                    "NAME": "First Aid",
+                    "IMAGE": "assets/imgs/c6.png"
+                },
+                {
+                    "ID": 3,
+                    "NAME": "Diabetic Sugar",
+                    "IMAGE": "assets/imgs/c6.png"
+                },
+                {
+                    "ID": 4,
+                    "NAME": "Foot Health",
+                    "IMAGE": "assets/imgs/c6.png"
+                }
+            ]
+        }
+    ],
+    "PRODUCTS": [
+        {
+            "ID": 1,
+            "NAME": "Honeycrisp Apple",
+            "DESCRIPTION": "One of the most popular, and diverse, fruits in America is known for being crisp, juicy and full of healthy benefits.",
+            "CATEGORY": "Food",
+            "PREVIOUS_PRICE": 8.00,
+            "CURRENT_PRICE": 6.99,
+            "DISCOUNT": 10,
+            "WEIGHT": "1 Kg",
+            "IMAGE": [
+                "assets/imgs/product1.1.png",
+                "assets/imgs/product1.2.png"
+            ]
+        },
+        {
+            "ID": 2,
+            "NAME": "Bananas",
+            "DESCRIPTION": "Characterized by their bright yellow color and sweet taste, bananas are the ideal fruit for snacks and sports activities",
+            "CATEGORY": "Food",
+            "PREVIOUS_PRICE": 4.00,
+            "CURRENT_PRICE": 2.99,
+            "DISCOUNT": 10,
+            "WEIGHT": "1 bunch",
+            "IMAGE": [
+                "assets/imgs/product2.1.png",
+                "assets/imgs/product2.2.png"
+            ]
+        },
+        {
+            "ID": 3,
+            "NAME": "Organic D'Anjou Pear",
+            "DESCRIPTION": "There are more than 3,000 varieties grown around the globe, though the best known in the U.S. is the Anjou.",
+            "CATEGORY": "Food",
+            "PREVIOUS_PRICE": 3.20,
+            "CURRENT_PRICE": 1.99,
+            "DISCOUNT": 20,
+            "WEIGHT": "1 Kg",
+            "IMAGE": [
+                "assets/imgs/product3.1.png",
+                "assets/imgs/product3.2.png"
+            ]
+        },
+        {
+            "ID": 4,
+            "NAME": "Strawberries",
+            "DESCRIPTION": "While this berry's colorful cousins—the blueberry and red raspberry—are grown on bushes, this bright red fruit comes from vines close to the ground. It's picked when ready to eat, though a strawberry will become a little sweeter if left at room temperature for a day.",
+            "CATEGORY": "Food",
+            "PREVIOUS_PRICE": 5.40,
+            "CURRENT_PRICE": 3.99,
+            "DISCOUNT": 10,
+            "WEIGHT": "1 Kg",
+            "IMAGE": [
+                "assets/imgs/product4.1.png",
+                "assets/imgs/product4.2.png",
+                "assets/imgs/product4.3.png"
+            ]
+        },
+        {
+            "ID": 5,
+            "NAME": "Green Seedless Grapes",
+            "DESCRIPTION": "Grown across the globe since the 14th century, there are more than 60 species of grapes.",
+            "CATEGORY": "Food",
+            "PREVIOUS_PRICE": 6.00,
+            "CURRENT_PRICE": 4.99,
+            "DISCOUNT": 5,
+            "WEIGHT": "1 Kg",
+            "IMAGE": [
+                "assets/imgs/product5.1.png",
+                "assets/imgs/product5.2.png"
+            ]
+        },
+        {
+            "ID": 6,
+            "NAME": "Organic Navel Orange",
+            "DESCRIPTION": "Characterized by the small formation resembling a navel on the blossom end, Navel oranges are one of the most popular citrus varieties. Available from November through June, these winter oranges have a slightly thick skin, are seedless and easy to peel, and provide an excellent source of Vitamin C. They have a floral aroma and are refreshingly sweet and juicy.",
+            "CATEGORY": "Food",
+            "PREVIOUS_PRICE": 8.00,
+            "CURRENT_PRICE": 6.80,
+            "DISCOUNT": 0,
+            "WEIGHT": "1 Kg",
+            "IMAGE": [
+                "assets/imgs/product6.1.png",
+                "assets/imgs/product6.2.png"
+            ]
+        },
+        {
+            "ID": 7,
+            "NAME": "Organic Broccoli",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "CATEGORY": "Food",
+            "PREVIOUS_PRICE": 4.50,
+            "CURRENT_PRICE": 2.90,
+            "DISCOUNT": 0,
+            "WEIGHT": "1 Kg",
+            "IMAGE": [
+                "assets/imgs/product7.1.png",
+                "assets/imgs/product7.2.png"
+            ]
+        },
+        {
+            "ID": 8,
+            "NAME": "Organic Roma Tomatoes",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "CATEGORY": "Food",
+            "PREVIOUS_PRICE": 6.30,
+            "CURRENT_PRICE": 4.66,
+            "DISCOUNT": 10,
+            "WEIGHT": "1 Kg",
+            "IMAGE": [
+                "assets/imgs/product8.1.png",
+                "assets/imgs/product8.2.png"
+            ]
+        },
+        {
+            "ID": 9,
+            "NAME": "Cucumber, Medium",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "CATEGORY": "Food",
+            "PREVIOUS_PRICE": 7.00,
+            "CURRENT_PRICE": 5.22,
+            "DISCOUNT": 0,
+            "WEIGHT": "1 Kg",
+            "IMAGE": [
+                "assets/imgs/product9.1.png",
+                "assets/imgs/product9.2.png"
+            ]
+        },
+        {
+            "ID": 10,
+            "NAME": "Butter Lettuce",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "CATEGORY": "Food",
+            "PREVIOUS_PRICE": 8.50,
+            "CURRENT_PRICE": 6.22,
+            "DISCOUNT": 0,
+            "WEIGHT": "1 Kg",
+            "IMAGE": [
+                "assets/imgs/product10.1.png",
+                "assets/imgs/product10.2.png"
+            ]
+        },
+        {
+            "ID": 11,
+            "NAME": "Red Bell Pepper",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "CATEGORY": "Food",
+            "PREVIOUS_PRICE": 8.30,
+            "CURRENT_PRICE": 6.11,
+            "DISCOUNT": 0,
+            "WEIGHT": "1 Kg",
+            "IMAGE": [
+                "assets/imgs/product11.1.png",
+                "assets/imgs/product11.2.png"
+            ]
+        },
+        {
+            "ID": 12,
+            "NAME": "Baby Carrots",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "CATEGORY": "Food",
+            "PREVIOUS_PRICE": 2.00,
+            "CURRENT_PRICE": 1.99,
+            "DISCOUNT": 30,
+            "WEIGHT": "1 Kg",
+            "IMAGE": [
+                "assets/imgs/product12.png"
+            ]
+        },
+        {
+            "ID": 13,
+            "NAME": "Marconda's Meats",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "CATEGORY": "Food",
+            "PREVIOUS_PRICE": 9.00,
+            "CURRENT_PRICE": 6.90,
+            "DISCOUNT": 0,
+            "WEIGHT": "1 Kg",
+            "IMAGE": [
+                "assets/imgs/product13.png"
+            ]
+        },
+        {
+            "ID": 14,
+            "NAME": "Fresh Atlantic Salmon",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "CATEGORY": "Food",
+            "PREVIOUS_PRICE": 7.20,
+            "CURRENT_PRICE": 6.10,
+            "DISCOUNT": 10,
+            "WEIGHT": "1 Kg",
+            "IMAGE": [
+                "assets/imgs/product14.png"
+            ]
+        },
+        {
+            "ID": 15,
+            "NAME": "Pompeian Extra Virgin Olive Oil",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "CATEGORY": "Food",
+            "PREVIOUS_PRICE": 22.00,
+            "CURRENT_PRICE": 20.99,
+            "DISCOUNT": 20,
+            "WEIGHT": "1 Kg",
+            "IMAGE": [
+                "assets/imgs/product15.png"
+            ]
+        },
+        {
+            "ID": 16,
+            "NAME": "Betty Crocker Bisquick Baking Mix",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "CATEGORY": "Food",
+            "PREVIOUS_PRICE": 15.00,
+            "CURRENT_PRICE": 12.15,
+            "DISCOUNT": 20,
+            "WEIGHT": "1 Kg",
+            "IMAGE": [
+                "assets/imgs/product16.png"
+            ]
+        },
+        {
+            "ID": 17,
+            "NAME": "White Hot Dog Buns",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "CATEGORY": "Food",
+            "PREVIOUS_PRICE": 15.00,
+            "CURRENT_PRICE": 12.15,
+            "DISCOUNT": 0,
+            "WEIGHT": "4 pcs",
+            "IMAGE": [
+                "assets/imgs/product17.png"
+            ]
+        },
+        {
+            "ID": 18,
+            "NAME": "Tandoori Naan Original",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "CATEGORY": "Food",
+            "PREVIOUS_PRICE": 10.00,
+            "CURRENT_PRICE": 8.11,
+            "DISCOUNT": 0,
+            "WEIGHT": "4 pcs",
+            "IMAGE": [
+                "assets/imgs/product18.png"
+            ]
+        }
+    ],
+    "FAQS": [
+        {
+            "SECTION": "General",
+            "TITLE": "What is Grocery?",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+            "SECTION": "General",
+            "TITLE": "What kind of products do you sell?",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+            "SECTION": "General",
+            "TITLE": "What cities and locations do you operate in?",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+            "SECTION": "General",
+            "TITLE": "Do you deliver to my location?",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+            "SECTION": "Payments/Refund related queries",
+            "TITLE": "How can I make payments at Grofers?",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+            "SECTION": "Payments/Refund related queries",
+            "TITLE": "When will I get my cashback?",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+            "SECTION": "Payments/Refund related queries",
+            "TITLE": "Do you deliver to my location?",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+            "SECTION": "Payments/Refund related queries",
+            "TITLE": "Do you deliver to my location?",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+            "SECTION": "Cancellation & Returns",
+            "TITLE": "How can I cancel my order?",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+            "SECTION": "Cancellation & Returns",
+            "TITLE": "What If I want to return something?",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+            "SECTION": "Cancellation & Returns",
+            "TITLE": "Can I reschedule my order?",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+            "SECTION": "Placing an order",
+            "TITLE": "How can I be sure the fruits and vegetables I order are of good quality?",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+            "SECTION": "Placing an order",
+            "TITLE": "How will I know if any item in my order is unavailable?",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+            "SECTION": "Placing an order",
+            "TITLE": "Is it safe to use my debit/credit card to shop on Grofers?",
+            "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        }
+    ]
+}

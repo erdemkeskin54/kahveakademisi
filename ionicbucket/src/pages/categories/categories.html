@@ -1,0 +1,40 @@
+<!-- 
+  - @author    Ionic Bucket <ionicbucket@gmail.com>
+  - @copyright Copyright (c) 2018
+  - @license   Fulcrumy
+-->
+
+<!-- Header  -->
+<ion-header no-border>
+  <header [title]="title"></header>
+</ion-header>
+<!-- End Header  -->
+
+<!-- Content  -->
+<ion-content class="background">
+
+  <!-- Main Categories  -->
+  <div class="card-background-page" *ngIf="!subCategories">
+    <ion-card class="animated fadeInLeft" *ngFor="let category of categories" (tap)="showSubCategory(category)">
+      <img [src]="category.IMAGE" />
+      <div [ngClass]="{'card-title-right': this.platform.dir()=='ltr', 'card-title-left': this.platform.dir()!='ltr'}">
+        {{category.NAME}}
+      </div>
+    </ion-card>
+  </div>
+
+  <!-- Sub-Categories  -->
+  <div class="card-background-page" *ngIf="subCategories">
+    <!-- List Of Categories  -->
+    <category-list-view-one style="direction:ltr"></category-list-view-one>
+
+    <!-- Sub-categories  -->
+    <ion-card class="animated fadeInLeft" *ngFor="let category of subCategories" (tap)="gotoProductPage()">
+      <img [src]="category.IMAGE" />
+      <div [ngClass]="{'card-title-right': this.platform.dir()=='ltr', 'card-title-left': this.platform.dir()!='ltr'}">
+        {{category.NAME}}
+      </div>
+    </ion-card>
+  </div>
+</ion-content>
+<!-- End Content -->

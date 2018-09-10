@@ -1,0 +1,74 @@
+<!-- 
+  - @author    Ionic Bucket <ionicbucket@gmail.com>
+  - @copyright Copyright (c) 2018
+  - @license   Fulcrumy
+-->
+
+<!-- Header  -->
+<ion-header no-border>
+  <header title="{{'PAGE_TITLE.Settings' | translate }}"></header>
+</ion-header>
+<!-- End Header  -->
+
+<!-- Content  -->
+<ion-content padding>
+
+  <!-- Language Options  -->
+  <ion-card class="animated fadeIn">
+    <ion-list radio-group>
+      <ion-list-header>
+        Change Language
+      </ion-list-header>
+      <ion-item *ngFor="let language of languages; let i=index">
+        <ion-label>{{'LANGUAGES.' + i + '.VALUE' | translate}}</ion-label>
+        <ion-radio color="color2" [checked]="language.ID == 'en'" value="{{'LANGUAGES.' + i + '.VALUE' | translate}}" (click)="changeLanguage(language.ID)">
+        </ion-radio>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+  <!-- End Language Options  -->
+
+  <br>
+
+  <!-- Notification -->
+  <ion-card class="animated fadeIn">
+    <ion-list>
+      <ion-list-header>
+        Notification
+      </ion-list-header>
+      <ion-item text-wrap>
+        <ion-label>Receive special offers</ion-label>
+        <ion-toggle color="color2" checked="true"></ion-toggle>
+      </ion-item>
+      <ion-item text-wrap>
+        <ion-label>Get update on your order status</ion-label>
+        <ion-toggle color="color2" checked="false"></ion-toggle>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+  <!-- End Notification  -->
+
+  <br>
+
+  <!-- Others  -->
+  <ion-card>
+    <ion-list>
+      <ion-list-header>
+        Support Us
+      </ion-list-header>
+      <button ion-item>
+        Rate Us
+      </button>
+      <button ion-item>
+        Share with friends
+      </button>
+      <button ion-item>
+        Feedback
+      </button>
+      <button ion-item>
+        Privacy Policy
+      </button>
+    </ion-list>
+  </ion-card>
+</ion-content>
+<!-- End Content  -->

@@ -1,0 +1,68 @@
+page-checkout {
+    .background {
+        background: url("../assets/imgs/background2.png") no-repeat fixed center;
+        background-size: cover;
+        .form-address {
+            margin-top: 20%;
+            ion-list {
+                .item-input {
+                    ion-label {
+                        color: #000;
+                        margin-left: 10px;
+                    }
+                }
+                .item:first-child {
+                    border-top: 1px solid $color1 !important;
+                    border-bottom: 1px solid $color1 !important;
+                }
+                .item-inner {
+                    border-top: 1px solid $color1 !important;
+                    border-bottom: 1px solid $color1 !important;
+                }
+                .item {
+                    border: 1px solid $color1 !important;
+                    padding-left: 0;
+                    margin-bottom: 10px;
+                    .text-input {
+                        padding: 5px;
+                    }
+                    *::-webkit-input-placeholder {
+                        color: $color1;
+                    }
+                }
+            }
+        }
+        .payment {
+       
+                .item-input {
+                    ion-label {
+                        color: #000;
+                        margin-left: 10px;
+                    }
+                }
+                .item:first-child {
+                    border-top: 1px solid $color1 !important;
+                    border-bottom: 1px solid $color1 !important;
+                }
+                .item-inner {
+                    border-top: 1px solid $color1 !important;
+                    border-bottom: 1px solid $color1 !important;
+                }
+                .item {
+                    border: 1px solid $color1 !important;
+                    padding-left: 0;
+                    margin-bottom: 10px;
+                    .text-input {
+                        padding: 5px;
+                    }
+                    *::-webkit-input-placeholder {
+                        color: $color1;
+                    }
+                }
+            
+        }
+        .list-ios{
+            margin-bottom: 5px!important;
+        }
+    }
+}

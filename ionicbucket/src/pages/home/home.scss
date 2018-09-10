@@ -1,0 +1,17 @@
+page-home {
+    .swiper-slide {
+        img {
+            height: 200px !important;
+            width: 100%;
+        }
+        .img1 {
+            height: 70px !important;
+            width: auto;
+            margin: auto;
+            display: block;
+        }
+    }
+    ion-slides {
+        height: auto;
+    }
+}

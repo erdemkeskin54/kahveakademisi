@@ -1,0 +1,115 @@
+<!-- 
+  - @author    Ionic Bucket <ionicbucket@gmail.com>
+  - @copyright Copyright (c) 2018
+  - @license   Fulcrumy
+-->
+
+<!-- Header  -->
+<ion-header no-border>
+  <header-one title="{{'PAGE_TITLE.MyCart' | translate }}"></header-one>
+</ion-header>
+<!-- End Header  -->
+
+<!-- Contents  -->
+<ion-content padding class="background">
+
+  <!-- When Cart is Empty -->
+  <div class="empty-cart" *ngIf="total == 0">
+    <img src="assets/imgs/empty-cart.png">
+  </div>
+
+  <!-- When cart data is exist  -->
+  <div *ngIf="total > 0">
+    <ion-row  text-center>
+      <ion-col col-12>
+          <button ion-button round (click)="updateCart()" style="margin-top: 3%;">Sepeti Güncelle</button>
+      </ion-col>
+ 
+    </ion-row>
+
+    <ion-card *ngFor="let item of cartData; let i = index" [ngSwitch]="item.productAmountType.amountType">
+      <!-- Quantity Options  -->
+      <ion-card-header style="padding-bottom:2px;">
+        <ion-row>
+          <!-- Decrease Quantity  -->
+          <ion-col col-2 text-left>
+            <ion-icon color="color1" name="remove-circle" style="zoom:1.8;" (click)="minusQuantity(item, i)"></ion-icon>
+          </ion-col>
+          <!-- Total Quantity & Price  -->
+          <ion-col col-8 text-center style="margin-top: 8px">
+            <span class="price">{{item.quantity}} * {{item.productAmountType.price | discountcalculater: item.productAmountType.product.discountAmount
+              | number : '1.2-2'}} ₺</span>&nbsp;=&nbsp;
+            <span class="price">{{item.quantity * item.productAmountType.price | discountcalculater: item.productAmountType.product.discountAmount
+              | number : '1.2-2'}} ₺</span>
+          </ion-col>
+          <!-- Increase Quantity  -->
+          <ion-col col-2 text-right>
+            <ion-icon color="color1" name="add-circle" style="zoom:1.8;" (click)="addQuantity(item, i)"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-card-header>
+      <!-- ./End Quantity Options  -->
+      <!-- Cart Products  -->
+      <ion-list>
+        <ion-item style="padding-left: 0px;">
+          <ion-row>
+            <ion-col col-4>
+              <!-- Product Image  -->
+              <ion-thumbnail item-start (tap)="openProductDetails(item)">
+                <img [src]="item.productAmountType.product.mainImage">
+              </ion-thumbnail>
+            </ion-col>
+            <ion-col col-6>
+              <ion-row>
+                <ion-col col-8>
+                  <!-- Product Name  -->
+                  <h2 (tap)="openProductDetails(item)">
+                    <strong>{{item.productAmountType.product.productName}} Deneme</strong>
+                  </h2>
+                  <!-- Product Category and Weight  -->
+                  <p (tap)="openProductDetails(item)" style="color:red" *ngFor="let category of item.productAmountType.product.categories">- {{category.categoryName}}</p>
+                </ion-col>
+                <ion-col col-4 *ngSwitchCase="1" style="margin-top: 45px">
+                  <ion-badge> Adet
+                    <br>{{item.productAmountType.weight}} gr</ion-badge>
+                </ion-col>
+                <ion-col col-4 *ngSwitchCase="2" style="margin-top: 45px">
+                  <ion-badge>Kilo
+                    <br> {{item.productAmountType.weight}} kg</ion-badge>
+                </ion-col>
+                <ion-col col-4 *ngSwitchCase="3" style="margin-top: 45px">
+                  <ion-badge> Kutu
+                    <br> {{item.productAmountType.weight}} kg</ion-badge>
+                </ion-col>
+              </ion-row>
+
+            </ion-col>
+            <ion-col col-2>
+              <!-- Remove Item From Cart  -->
+              <button ion-button color="color2" clear item-end (tap)="removeItem(item.id, i)">
+                <ion-icon name="close" style="zoom:2.0;"></ion-icon>
+              </button>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+      </ion-list>
+    </ion-card>
+  </div>
+</ion-content>
+<!-- End Contents  -->
+
+<!-- Footer  -->
+<ion-footer *ngIf="total > 0" style="background-color: wheat;">
+  <ion-grid>
+    <!-- Total Options  -->
+    <ion-row>
+      <ion-col text-center col-12 class="total">Toplam: {{ total | number : '1.2-2' }} ₺ </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- Checkout Button  -->
+  <div class="animated fadeInUp" text-center>
+    <button ion-button round block color="color2" (tap)="gotoCheckout()">Ödeme Yeri</button>
+  </div>
+</ion-footer>
+<!-- End Footer  -->

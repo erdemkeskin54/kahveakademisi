@@ -1,0 +1,9 @@
+<!-- Generated template for the HomeCategoryListComponent component -->
+<ion-slides slidesPerView="2" loop="true" effect="slide" autoplay="4000" class="animated slideInLeft" style="direction:ltr">
+  <ion-slide>
+    <button ion-button full round color="color1" (tap)="gotoCategoryPage('CategoriesPage')">Tüm Kategoriler</button>
+  </ion-slide>
+  <ion-slide *ngFor="let category of categories">
+    <button ion-button full round color="color1" (tap)="gotoSubCategoryPage('CategoriesPage', category)">{{category.NAME}}</button>
+  </ion-slide>
+</ion-slides>

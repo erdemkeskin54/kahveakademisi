@@ -1,0 +1,44 @@
+page-categories {
+    .background {
+        background: url("../assets/imgs/background2.png") no-repeat fixed center;
+        background-size: cover;
+        .card-background-page {
+            ion-card {
+                position: relative;
+                height: 100px;
+                img {
+                    width: 120px;
+                    padding: 10px;
+                }
+            }
+            .card-title-left {
+                position: absolute;
+                top: 30%;
+                font-size: 20px;
+                width: 100%;
+                font-weight: bold;
+                color: rgba(45, 42, 42, 0.85);
+                padding-left: 5%;
+                text-align: left;
+                pre {
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+            .card-title-right {
+                position: absolute;
+                top: 30%;
+                font-size: 20px;
+                width: 100%;
+                font-weight: bold;
+                color: rgba(45, 42, 42, 0.85);
+                padding-right: 5%;
+                text-align: right;
+                pre {
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

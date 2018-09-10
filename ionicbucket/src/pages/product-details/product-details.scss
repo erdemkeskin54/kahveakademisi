@@ -1,0 +1,39 @@
+
+page-product-details {
+    .background {
+        background: url("../assets/imgs/background3.png") no-repeat fixed center;
+        background-size: cover;
+        .slider {
+            height: 240px;
+        }
+        .price {
+            font-size: 16px;
+            font-weight: bold;
+            color: #222;
+            position: relative;
+            top:0px;
+            width: 100%;
+            text-align: center;
+        }
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            color: #222;
+        }
+  
+    }
+    .custom-btn {
+        margin-top: 5%;
+        background: linear-gradient(-60deg, $themeColor1);
+        font-size: 18px;
+        font-weight: 700;
+        box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.5);
+    }
+    .md ion-toggle{
+        top:5px;
+    }
+   
+    .ios ion-toggle{
+        top:15px;
+    }
+}

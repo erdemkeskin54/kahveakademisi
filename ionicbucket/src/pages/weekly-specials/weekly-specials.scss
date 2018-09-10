@@ -1,0 +1,12 @@
+page-weekly-specials {
+    .background {
+        background: url("../assets/imgs/background.png") no-repeat fixed center;
+        background-size: cover;
+        img {
+            height: 70px !important;
+            width: auto;
+            margin: auto;
+            display: block;
+        }
+    }
+}

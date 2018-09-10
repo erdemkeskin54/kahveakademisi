@@ -1,0 +1,15 @@
+page-my-order {
+    .background {
+        background: url("../assets/imgs/background2.png") no-repeat fixed center;
+        background-size: cover;
+        .total {
+            border-top: 1px solid $color1;
+            h2,
+            span {
+                color: $color2;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+    }
+}

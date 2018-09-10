@@ -1,0 +1,27 @@
+page-cart {
+    .background {
+        background: url("../assets/imgs/background.png") no-repeat fixed center;
+        background-size: cover;
+    }
+    .empty-cart {
+        text-align: center;
+        padding-top: 20%;
+        img {
+            width: 200px;
+        }
+    }
+    .custom-btn {
+        background: linear-gradient(-60deg, $themeColor1);
+        font-size: 14px;
+        box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.5);
+    }
+    .total {
+        font-size: 20px;
+        font-weight: bold;
+        color: $color2;
+    }
+    .scroll-content{
+        margin-top:30px!important;
+        height: 79%;
+    }
+}

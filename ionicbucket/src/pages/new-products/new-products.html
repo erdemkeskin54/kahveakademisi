@@ -1,0 +1,26 @@
+<!-- 
+  - @author    Ionic Bucket <ionicbucket@gmail.com>
+  - @copyright Copyright (c) 2018
+  - @license   Fulcrumy
+-->
+
+<!-- Header  -->
+<ion-header no-border>
+  <header title="{{'PAGE_TITLE.NewProducts' | translate }}"></header>
+</ion-header>
+<!-- End Header  -->
+
+<!-- Main Content  -->
+<ion-content padding class="background">
+  <ion-list padding-top no-lines *ngIf="productList && productList.length">
+    <ion-item *ngFor="let item of productList" (tap)="openProductDetails(item)">
+      <ion-thumbnail item-start>
+        <img [src]="item.IMAGE[0]">
+      </ion-thumbnail>
+      <h2>{{ item.NAME }}</h2>
+      <p>{{item.WEIGHT}} - ${{item.CURRENT_PRICE}}</p>
+      <button ion-button clear item-end color="color1">View</button>
+    </ion-item>
+  </ion-list>
+</ion-content>
+<!-- End Contents  -->

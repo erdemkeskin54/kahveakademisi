@@ -1,0 +1,23 @@
+<!-- Generated template for the HeaderComponent component -->
+
+<ion-navbar color="white" no-border>
+  <!-- Menu  -->
+  <button color="color1" ion-button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+
+  <!-- Page Title  -->
+  <ion-title color="color1">{{title}}</ion-title>
+
+  <ion-buttons end>
+    <!-- Search Button  -->
+    <button ion-button icon-only color="color1" (tap)="openPage('SearchPage')">
+      <ion-icon name="search"></ion-icon>
+    </button>
+
+    <!-- Cart Button  -->
+    <button ion-button icon-only color="color1" (tap)="openPage('CartPage')">
+      <ion-icon name="cart"></ion-icon>
+    </button>
+  </ion-buttons>
+</ion-navbar>

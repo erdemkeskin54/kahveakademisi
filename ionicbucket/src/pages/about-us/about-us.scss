@@ -1,0 +1,22 @@
+page-about-us {
+    .background {
+        height: 20%;
+        .page-title {
+            position: absolute;
+            width: 100%;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            background: $color2;
+            padding: 10px;
+            opacity: 0.8;
+        }
+    }
+    .contents {
+        font-size: 14px;
+        color: #333;
+        text-align: justify;
+    }
+}

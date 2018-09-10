@@ -1,0 +1,59 @@
+<!-- 
+  - @author    Ionic Bucket <ionicbucket@gmail.com>
+  - @copyright Copyright (c) 2018
+  - @license   Fulcrumy
+-->
+<!-- Sign Up Page -->
+
+<ion-content padding>
+  <div class="background" text-center>
+
+    <div class="title animated fadeInDown">
+      <p>SIGN UP</p>
+    </div>
+
+    <!-- Main Body -->
+    <div class="main-body animated zoomIn" padding>
+      <form>
+        <ion-list>
+
+          <!-- User Name -->
+          <ion-item>
+            <ion-label>
+              <ion-icon name="person" color="color1"></ion-icon>
+            </ion-label>
+            <ion-input type="text" placeholder="User Name" name="username"></ion-input>
+          </ion-item>
+
+          <!-- Email -->
+          <ion-item>
+            <ion-label>
+              <ion-icon name="md-mail" color="color1"></ion-icon>
+            </ion-label>
+            <ion-input type="email" placeholder="Email" name="email"></ion-input>
+          </ion-item>
+
+          <!-- Password -->
+          <ion-item>
+            <ion-label>
+              <ion-icon name="md-eye" color="color1"></ion-icon>
+            </ion-label>
+            <ion-input type="password" placeholder="Password" name="password"></ion-input>
+          </ion-item>
+        </ion-list>
+
+        <!-- Sign Up Button -->
+        <div class="buttons animated fadeInUp">
+          <button class="custom-btn" ion-button type="button" color="color2" ion-button round full (click)="signUp()">
+              Sign Up
+          </button>
+        </div>
+      </form>
+
+      <!-- Sign In Button-->
+      <button ion-button color="color1" clear (click)="gotoSignInPage()">
+        <strong>Already have an account? Sign In</strong>
+      </button>
+    </div>
+  </div>
+</ion-content>
