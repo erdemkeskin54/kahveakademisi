@@ -1,3 +1,20 @@
+# Bu Projede Neler Kullanıldı ?
+ 
+## Ionic 4 ,
+
+## Asp.net Core,
+   Unit of work design pattern'ine  dependency injection uygulandı,
+   GenericRepostioryler ve CustomRepositoryler oluşturuldu,
+   Identity kütüphanesi ile kullanıcı yönetimi ve rol yönetimi sağlandı,
+   JWT kütüphanesi ile authorize işlemleri, claims ve role kontroller yapıldı,
+   Localizer kullanılarak api'den dönen hata mesajlari, url'den gelen dil seçeneğine göre set edildi,
+   Serilog kütüphanesi kullanılarak beklenmeyen tüm hatalar günlük olarak loglandı.
+   OperationResult tasarımıyla tüm fonksiyonel hatalar denetim altına alındı,
+   Twilio kütüphanesi ile üye olma işlemi gerekleştiren kullanıcılara doğrulama sms'i gönderildi,
+   Signalr kütüphanesi ile iyzico callback'inin sonucu client tarafına iletildi,
+   Pomelo.EntityFrameworkCore.MySql kütüphanesi ile backend'in mysql server'ı ile bağlantısı kuruldu,
+
+
 # Screenshots
 ![login](https://user-images.githubusercontent.com/24223180/45319146-a926d500-b547-11e8-92f1-1b2d5351934b.png)
 ![home](https://user-images.githubusercontent.com/24223180/45319155-b3e16a00-b547-11e8-8142-bfd4fd2393d6.png)
