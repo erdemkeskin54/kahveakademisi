@@ -5,6 +5,7 @@
 ## Asp.net Core,
    Unit of work design pattern'ine  dependency injection uygulandı,
    GenericRepostioryler ve CustomRepositoryler oluşturuldu,
+   EntityFramework kullanıldı,
    Identity kütüphanesi ile kullanıcı yönetimi ve rol yönetimi sağlandı,
    JWT kütüphanesi ile authorize işlemleri, claims ve role kontroller yapıldı,
    Localizer kullanılarak api'den dönen hata mesajlari, url'den gelen dil seçeneğine göre set edildi,
@@ -13,6 +14,7 @@
    Twilio kütüphanesi ile üye olma işlemi gerekleştiren kullanıcılara doğrulama sms'i gönderildi,
    Signalr kütüphanesi ile iyzico callback'inin sonucu client tarafına iletildi,
    Pomelo.EntityFrameworkCore.MySql kütüphanesi ile backend'in mysql server'ı ile bağlantısı kuruldu,
+   Swahbuckle kütüphanesi ile, oluşturulan api'nin kullanma klavuzu oluşturuldu.
 
 
 # Screenshots
