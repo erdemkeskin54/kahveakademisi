@@ -13,6 +13,7 @@
 ![aboutus](https://user-images.githubusercontent.com/24223180/45319278-13d81080-b548-11e8-9b0b-ba06277d90a3.png)
 ![sss](https://user-images.githubusercontent.com/24223180/45319282-18042e00-b548-11e8-945a-a908cb156317.png)
 ![manavcim](https://user-images.githubusercontent.com/24223180/45319291-1c304b80-b548-11e8-80dd-bac72201e5c0.png)
+![iyzico](https://user-images.githubusercontent.com/24223180/45319408-65809b00-b548-11e8-810e-1580239559dc.png)
 ![10968447 nolu odeme sayfasi](https://user-images.githubusercontent.com/24223180/45319295-1d617880-b548-11e8-87f8-a684421296e6.png)
 
 
