@@ -1,2 +1,1 @@
-"# kahve-akademisi" 
-"# kahve-akademisi" 
+# Screenshots
